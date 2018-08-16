@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Results | SCCAF]]></title>
+  <link href="http://sccaf.ml/blog/categories/results/atom.xml" rel="self"/>
+  <link href="http://sccaf.ml/"/>
+  <updated>2018-08-16T10:17:56+01:00</updated>
+  <id>http://sccaf.ml/</id>
+  <author>
+    <name><![CDATA[Chichau Miau]]></name>
+    <email><![CDATA[chichaumiau@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Puzzle 21]]></title>
+    <link href="http://sccaf.ml/blog/2017/11/18/puzzle-21/"/>
+    <updated>2017-11-18T20:42:23+00:00</updated>
+    <id>http://sccaf.ml/blog/2017/11/18/puzzle-21</id>
+    <content type="html"><![CDATA[<p><strong>Sequence</strong> (5' to 3'):</p>
+
+<p>CCGGACGAGGUGCGCCGUACCCGGUCAGGACAAGACGGCGC</p>
+
+<p><strong>Puzzle</strong>:
+Guanidine III Riboswitch</p>
+
+<p>Crystal structure kindly provided by: <a href="http://www.lifesci.dundee.ac.uk/groups/nasg/"><strong>David M J Lilley</strong></a></p>
+
+<p><strong>Reference</strong>:
+Structure of the Guanidine III Riboswitch. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28988949">Cell Chem Biol. 2017 Nov 16;24(11):1407-1415.e2. doi: 10.1016/j.chembiol.2017.08.021. Epub 2017 Oct 5.</a></p>
+
+<p><strong>PDB id</strong>: <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=5nwq">5nwq</a>  <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=5nz6">5nz6</a></p>
+
+<p><a href="https://github.com/chichaumiau/rnapuzzles/tree/gh-pages/data/Puzzle21/pdb">raw prediction</a>   |   <a href="/blog/2000/01/01/puzzle-21-3d/">Assessment results</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Puzzle 20]]></title>
+    <link href="http://sccaf.ml/blog/2017/11/18/puzzle-20/"/>
+    <updated>2017-11-18T20:42:22+00:00</updated>
+    <id>http://sccaf.ml/blog/2017/11/18/puzzle-20</id>
+    <content type="html"><![CDATA[<p><strong>Sequence</strong> (5' to 3'):
+TBA</p>
+
+<p><strong>Puzzle</strong>:
+TBA.</p>
+
+<p>Crystal structure kindly provided by: TBA</p>
+
+<p><strong>Reference</strong>:
+TBA</p>
+
+<p><strong>PDB id</strong>: TBA</p>
+
+<p><a href="https://github.com/chichaumiau/rnapuzzles/tree/gh-pages/data/Puzzle20/pdb">raw prediction</a>   |   <a href="/blog/2000/01/01/puzzle-20-3d/">Assessment results</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Puzzle 19]]></title>
+    <link href="http://sccaf.ml/blog/2017/11/18/puzzle-19/"/>
+    <updated>2017-11-18T20:42:18+00:00</updated>
+    <id>http://sccaf.ml/blog/2017/11/18/puzzle-19</id>
+    <content type="html"><![CDATA[<p><strong>Sequence</strong> (5' to 3'):</p>
+
+<p>GCAGGGCAAGGCCCAGUCCCGUGCAAGCCGGGACCGCCCC-
+GGGGCGCGGCGCUCAUUCCUGC</p>
+
+<p><strong>Puzzle</strong>:
+twister sister.</p>
+
+<p>Crystal structure kindly provided by: <a href="http://www.lifesci.dundee.ac.uk/groups/nasg/"><strong>David M J Lilley</strong></a></p>
+
+<p><strong>Reference</strong>:
+The structure of a nucleolytic ribozyme that employs a catalytic metal ion. <a href="https://www.nature.com/nchembio/journal/v13/n5/full/nchembio.2333.html">Nature Chemical Biology 13, 508–513 (2017) doi:10.1038/nchembio.2333.</a></p>
+
+<p><strong>PDB id</strong>: <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=5t5a">5t5a</a></p>
+
+<p><a href="https://github.com/chichaumiau/rnapuzzles/tree/gh-pages/data/Puzzle19/pdb">raw prediction</a>   |   <a href="/blog/2000/01/01/puzzle-19-3d/">Assessment results</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Puzzle 18]]></title>
+    <link href="http://sccaf.ml/blog/2017/11/18/puzzle-18/"/>
+    <updated>2017-11-18T20:42:16+00:00</updated>
+    <id>http://sccaf.ml/blog/2017/11/18/puzzle-18</id>
+    <content type="html"><![CDATA[<p><strong>Sequence</strong> (5' to 3'):
+GGGUCAGGCCGGCGAAAGUCGCCACAGUUUGGGGAAAGCUGUGCAGCCUGUAAC
+CCCCCCACGAAAGUGGG</p>
+
+<p><strong>Puzzle</strong>:
+Zika virus.</p>
+
+<p>Crystal structure kindly provided by: <a href="http://www.ucdenver.edu/academics/colleges/medicalschool/departments/biochemistry/Research/researchlabs/KieftLab/Pages/KieftLab.aspx"><strong>Jeffrey S. Kieft</strong></a></p>
+
+<p><strong>Reference</strong>:
+Zika virus produces noncoding RNAs using a multi-pseudoknot structure that confounds a cellular exonuclease. (2016) <a href="http://science.sciencemag.org/content/early/2016/11/04/science.aah3963">Science 354: 1148-1152. DOI: 10.1126/science.aah3963.</a></p>
+
+<p><strong>PDB id</strong>: <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=5tpy">5tpy</a></p>
+
+<p><a href="https://github.com/chichaumiau/rnapuzzles/tree/gh-pages/data/Puzzle18/pdb">raw prediction</a>   |   <a href="/blog/2000/01/01/puzzle-18-3d/">Assessment results</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Puzzle 17]]></title>
+    <link href="http://sccaf.ml/blog/2017/11/18/puzzle-17/"/>
+    <updated>2017-11-18T20:42:13+00:00</updated>
+    <id>http://sccaf.ml/blog/2017/11/18/puzzle-17</id>
+    <content type="html"><![CDATA[<p><strong>Sequence</strong> (5' to 3'):
+CGUGGUUAGGGCCACGUUAAAUAGUUGCUUAAGCCCUAAGCGUUGAUAAAUAUC
+AGGUGCAA</p>
+
+<p><strong>Puzzle</strong>:
+Pistol ribozyme.</p>
+
+<p>Crystal structure kindly provided by: <a href="https://www.mskcc.org/research-areas/labs/dinshaw-patel"><strong>Dinshaw Patel</strong></a></p>
+
+<p><strong>Reference</strong>:
+Pistol ribozyme adopts a pseudoknot fold facilitating site-specific in-line cleavage. <a href="http://www.nature.com/nchembio/journal/v12/n9/full/nchembio.2125.html">Nature Chemical Biology 12, 702–708 (2016) doi:10.1038/nchembio.2125.</a></p>
+
+<p><strong>PDB id</strong>: <a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=5k7c">5k7c</a></p>
+
+<p><a href="https://github.com/chichaumiau/rnapuzzles/tree/gh-pages/data/Puzzle17/pdb">raw prediction</a>   |   <a href="/blog/2000/01/01/puzzle-17-3d/">Assessment results</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle 14Bound Table - SCCAF</title>
+  <meta name="author" content="Chichau Miau">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="SCCAF" type="application/atom+xml">
+
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/">
+  <meta property="og:title" content="Puzzle 14Bound Table - SCCAF">
+  
+
+  <script src="/assets/bootstrap/dist/js/jquery-3.2.1.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/stylish-portfolio.css" rel="stylesheet" type = "text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//jpswalsh.github.io/academicons/css/academicons.css" rel="stylesheet">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+  <body   >
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-custom" role="navigation">
+	
+    <div class="container">
+        <div class="navbar-header">
+<!--
+            <button type="button" class="navbar-toggle" title="toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+-->
+            <img src="/images/logo.jpg" style='max-height:50px;' alt="logo">
+            <a class="navbar-brand" href="/">SCCAF</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li >
+                    <a href="/news">News</a>
+                </li>
+                <li >
+                    <a href="/results">Results</a>
+                </li>
+                <li >
+                    <a href="/open-puzzle">Open Puzzles</a>
+                </li>
+                <li >
+                    <a href="/group">Groups</a>
+                </li>
+                <li >
+                    <a href="/publication">Publications</a>
+                </li>
+                <li >
+                    <a href="https://chichaumiau.github.io/rnapuzzlestoolkit">Resource</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+            </ul>
+            
+                <form class="navbar-form navbar-right" action="https://www.google.com/search" method="GET">
+                    <input type="hidden" name="sitesearch" value="sccaf.ml">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" placeholder="Search">
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+	<ul class="sidebar-nav">
+		<a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+		<li class="sidebar-brand"><a href="https://chichaumiau.github.io/rnapuzzles" onclick=$("#menu-close").click();>RNA-Puzzles</a></li>
+		<li><a href="#top" onclick=$("#menu-close").click();>Home</a></li>
+		<li><a href="/news" onclick=$("#menu-close").click();>News</a></li>
+		<li><a href="/results" onclick=$("#menu-close").click();>Results</a></li>
+		<li><a href="/open-puzzle" onclick=$("#menu-close").click();>Open Challenges</a></li>
+		<li><a href="/group" onclick=$("#menu-close").click();>Community</a></li>
+		<li><a href="/publication" onclick=$("#menu-close").click();>Publications</a></li>
+		<li><a href="https://chichaumiau.github.io/rnapuzzlestoolkit" onclick=$("#menu-close").click();>Resouce</a></li>
+		<li><a href="https://github.com/RNA-Puzzles" onclick=$("#menu-close").click();>Github</a></li>
+	</ul>
+</nav>
+
+
+      </header>
+      <div id="main" role="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content col-md-9" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="SCCAF" />
+    <meta itemprop="description" content="The quantitative assessment of the clustering of single cell data is a critical problem to be solved in data analysis. We present a machine learning based self-projection framework(SCCAF) to assess the clustering quality of single-cell RNA-seq data, find similar cell clusters that encode identical signature, detect potential doublets and find marker genes. On both simulated and real scRNA-Seq datasets, we illustrate the capabilities of SCCAF. We show that SCCAF greatly helps in finding encodable cell clusters and may useful contribute to the building of standard operating procedure of high-throughput single-cell sequencing data." />
+    <meta itemprop="url" content="http://sccaf.ml" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2000-01-01T00:00:01+00:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+        
+           | <a href="#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://sccaf.ml">Comments</a>
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Puzzle 14Bound Table
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody description"><script src="/javascripts/sorttable.js"></script>
+
+
+<script>
+    window.onload = function() {
+        (document.getElementsByTagName( 'th' )[1]).click();
+    };
+</script>
+
+
+<p><br/></p>
+
+<div align="center">
+Please click the tags to sort data.<br/>
+<table class="sortable" border=1>
+  <tr>
+    <th>Lab</th>
+    <th>Num</th>
+    <th>RMSD</th>
+    <th>DI all</th>
+    <th>INF all</th>
+    <th>INF wc</th>
+    <th>INF nwc</th>
+    <th>INF stacking</th>
+    <th>Clash Score</th>
+    <th>P-value</th>
+    <th>mcq</th>
+    <th>best sol.</th>
+    <th>Detail</th>
+  </tr>
+  <tr><td>BujnickiPreExp</td><td>2</td><td>4.994</td><td>6.226</td><td>0.802</td><td>0.968</td><td>0.667</td><td>0.767</td><td>9.120</td><td>0.00e+00</td><td>18.92</td><td>4</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_2'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>1</td><td>5.681</td><td>7.210</td><td>0.788</td><td>1.000</td><td>0.596</td><td>0.741</td><td>8.110</td><td>0.00e+00</td><td>18.62</td><td>2</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_1'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>4</td><td>6.389</td><td>8.614</td><td>0.742</td><td>0.918</td><td>0.577</td><td>0.701</td><td>11.180</td><td>0.00e+00</td><td>14.69</td><td>5</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_4'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>3</td><td>6.768</td><td>8.495</td><td>0.797</td><td>1.000</td><td>0.596</td><td>0.756</td><td>8.610</td><td>1.11e-16</td><td>18.97</td><td>2</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_3'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>6</td><td>7.249</td><td>8.902</td><td>0.814</td><td>0.894</td><td>0.722</td><td>0.801</td><td>11.650</td><td>7.77e-16</td><td>16.58</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPreExp_6'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>6</td><td>7.464</td><td>10.792</td><td>0.692</td><td>0.968</td><td>0.333</td><td>0.645</td><td>0.000</td><td>2.05e-15</td><td>17.55</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_6'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>9</td><td>7.694</td><td>9.516</td><td>0.809</td><td>0.894</td><td>0.722</td><td>0.792</td><td>6.080</td><td>5.72e-15</td><td>15.09</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPreExp_9'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>5</td><td>7.832</td><td>10.225</td><td>0.766</td><td>0.894</td><td>0.632</td><td>0.739</td><td>0.000</td><td>1.04e-14</td><td>15.44</td><td>5</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_5'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>2</td><td>7.965</td><td>11.016</td><td>0.723</td><td>0.938</td><td>0.250</td><td>0.701</td><td>0.000</td><td>1.84e-14</td><td>17.34</td><td>5</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_2'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>8</td><td>8.064</td><td>10.151</td><td>0.794</td><td>0.918</td><td>0.577</td><td>0.783</td><td>6.590</td><td>2.80e-14</td><td>14.31</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPreExp_8'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>5</td><td>8.333</td><td>11.884</td><td>0.701</td><td>0.968</td><td>0.333</td><td>0.660</td><td>0.510</td><td>8.72e-14</td><td>17.63</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_5'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>5</td><td>9.621</td><td>12.112</td><td>0.794</td><td>0.918</td><td>0.791</td><td>0.753</td><td>5.570</td><td>1.45e-11</td><td>15.89</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPreExp_5'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>10</td><td>9.621</td><td>12.112</td><td>0.794</td><td>0.918</td><td>0.791</td><td>0.753</td><td>5.570</td><td>1.45e-11</td><td>15.89</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPostExp_10'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>6</td><td>10.957</td><td>13.392</td><td>0.818</td><td>0.884</td><td>0.745</td><td>0.810</td><td>8.110</td><td>1.72e-09</td><td>17.98</td><td>3</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_6'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>9</td><td>11.007</td><td>14.904</td><td>0.739</td><td>0.968</td><td>0.204</td><td>0.726</td><td>0.510</td><td>2.03e-09</td><td>16.39</td><td>5</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_9'>-></a></td></tr>
+<tr><td>BujnickiPostExp</td><td>1</td><td>11.411</td><td>14.771</td><td>0.773</td><td>0.968</td><td>0.612</td><td>0.729</td><td>18.740</td><td>7.69e-09</td><td>17.80</td><td>5</td><td><a href='/show/index.html?id=14Bound_BujnickiPostExp_1'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>2</td><td>11.473</td><td>14.997</td><td>0.765</td><td>0.894</td><td>0.596</td><td>0.745</td><td>2.530</td><td>9.38e-09</td><td>15.32</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPreExp_2'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>7</td><td>11.473</td><td>14.997</td><td>0.765</td><td>0.894</td><td>0.596</td><td>0.745</td><td>2.530</td><td>9.38e-09</td><td>15.32</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_7'>-></a></td></tr>
+<tr><td>BujnickiPostExp</td><td>5</td><td>11.517</td><td>16.389</td><td>0.703</td><td>0.884</td><td>0.667</td><td>0.645</td><td>23.300</td><td>1.08e-08</td><td>24.26</td><td>2</td><td><a href='/show/index.html?id=14Bound_BujnickiPostExp_5'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>7</td><td>11.566</td><td>16.961</td><td>0.682</td><td>0.968</td><td>0.333</td><td>0.629</td><td>0.510</td><td>1.27e-08</td><td>18.47</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_7'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>2</td><td>11.607</td><td>14.991</td><td>0.774</td><td>0.894</td><td>0.745</td><td>0.737</td><td>8.610</td><td>1.44e-08</td><td>15.71</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_2'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>7</td><td>11.630</td><td>14.584</td><td>0.797</td><td>0.918</td><td>0.722</td><td>0.765</td><td>12.160</td><td>1.55e-08</td><td>15.30</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPreExp_7'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>5</td><td>11.641</td><td>15.440</td><td>0.754</td><td>0.884</td><td>0.722</td><td>0.712</td><td>6.080</td><td>1.60e-08</td><td>14.48</td><td>5</td><td><a href='/show/index.html?id=14Bound_DasPostExp_5'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>1</td><td>11.659</td><td>18.175</td><td>0.642</td><td>0.968</td><td>0.000</td><td>0.616</td><td>11.140</td><td>1.70e-08</td><td>20.24</td><td>3</td><td><a href='/show/index.html?id=14Bound_DingPostExp_1'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>8</td><td>12.022</td><td>17.151</td><td>0.701</td><td>0.968</td><td>0.000</td><td>0.690</td><td>16.200</td><td>5.25e-08</td><td>18.14</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPostExp_8'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>3</td><td>12.247</td><td>17.390</td><td>0.704</td><td>0.894</td><td>0.298</td><td>0.696</td><td>11.660</td><td>1.03e-07</td><td>16.22</td><td>2</td><td><a href='/show/index.html?id=14Bound_DasPreExp_3'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>8</td><td>12.247</td><td>17.390</td><td>0.704</td><td>0.894</td><td>0.298</td><td>0.696</td><td>11.660</td><td>1.03e-07</td><td>16.22</td><td>2</td><td><a href='/show/index.html?id=14Bound_DasPostExp_8'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>1</td><td>12.306</td><td>15.637</td><td>0.787</td><td>0.943</td><td>0.707</td><td>0.744</td><td>7.090</td><td>1.23e-07</td><td>16.09</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPreExp_1'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>6</td><td>12.306</td><td>15.637</td><td>0.787</td><td>0.943</td><td>0.707</td><td>0.744</td><td>7.090</td><td>1.23e-07</td><td>16.09</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_6'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>2</td><td>12.346</td><td>18.296</td><td>0.675</td><td>0.968</td><td>0.000</td><td>0.641</td><td>13.680</td><td>1.39e-07</td><td>19.08</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPostExp_2'>-></a></td></tr>
+<tr><td>BujnickiPostExp</td><td>4</td><td>12.688</td><td>20.874</td><td>0.608</td><td>0.860</td><td>0.333</td><td>0.553</td><td>28.400</td><td>3.75e-07</td><td>20.23</td><td>2</td><td><a href='/show/index.html?id=14Bound_BujnickiPostExp_4'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>4</td><td>12.732</td><td>15.911</td><td>0.800</td><td>0.860</td><td>0.745</td><td>0.792</td><td>5.070</td><td>4.25e-07</td><td>15.96</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_4'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>9</td><td>13.396</td><td>19.289</td><td>0.694</td><td>0.968</td><td>0.000</td><td>0.690</td><td>11.140</td><td>2.62e-06</td><td>21.04</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPostExp_9'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>2</td><td>13.499</td><td>20.005</td><td>0.675</td><td>0.968</td><td>0.000</td><td>0.650</td><td>16.210</td><td>3.44e-06</td><td>20.25</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPreExp_2'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>5</td><td>13.527</td><td>19.479</td><td>0.694</td><td>0.938</td><td>0.000</td><td>0.690</td><td>21.280</td><td>3.70e-06</td><td>19.10</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPostExp_5'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>3</td><td>13.546</td><td>18.957</td><td>0.715</td><td>1.000</td><td>0.000</td><td>0.686</td><td>16.210</td><td>3.89e-06</td><td>18.18</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPreExp_3'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>1</td><td>13.835</td><td>18.262</td><td>0.758</td><td>0.860</td><td>0.630</td><td>0.741</td><td>12.160</td><td>8.13e-06</td><td>15.87</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_1'>-></a></td></tr>
+<tr><td>BujnickiPostExp</td><td>2</td><td>13.936</td><td>22.016</td><td>0.633</td><td>0.860</td><td>0.204</td><td>0.601</td><td>29.380</td><td>1.05e-05</td><td>21.30</td><td>5</td><td><a href='/show/index.html?id=14Bound_BujnickiPostExp_2'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>3</td><td>14.071</td><td>18.854</td><td>0.746</td><td>0.860</td><td>0.630</td><td>0.723</td><td>14.180</td><td>1.46e-05</td><td>15.91</td><td>3</td><td><a href='/show/index.html?id=14Bound_DasPostExp_3'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>1</td><td>14.307</td><td>20.896</td><td>0.685</td><td>0.968</td><td>0.000</td><td>0.686</td><td>13.680</td><td>2.58e-05</td><td>20.84</td><td>5</td><td><a href='/show/index.html?id=14Bound_DingPreExp_1'>-></a></td></tr>
+<tr><td>BujnickiPreExp</td><td>7</td><td>15.276</td><td>27.231</td><td>0.561</td><td>0.782</td><td>-</td><td>0.523</td><td>8.610</td><td>2.24e-04</td><td>24.20</td><td>2</td><td><a href='/show/index.html?id=14Bound_BujnickiPreExp_7'>-></a></td></tr>
+<tr><td>AdamiakPostExp</td><td>2</td><td>15.368</td><td>19.693</td><td>0.780</td><td>0.968</td><td>0.471</td><td>0.754</td><td>14.710</td><td>2.71e-04</td><td>14.66</td><td>3</td><td><a href='/show/index.html?id=14Bound_AdamiakPostExp_2'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>7</td><td>15.416</td><td>22.879</td><td>0.674</td><td>0.904</td><td>0.000</td><td>0.685</td><td>16.210</td><td>2.99e-04</td><td>19.89</td><td>4</td><td><a href='/show/index.html?id=14Bound_DingPreExp_7'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>10</td><td>15.550</td><td>23.447</td><td>0.663</td><td>0.884</td><td>0.385</td><td>0.622</td><td>6.080</td><td>3.92e-04</td><td>16.21</td><td>2</td><td><a href='/show/index.html?id=14Bound_DasPreExp_10'>-></a></td></tr>
+<tr><td>DasPostExp</td><td>9</td><td>15.550</td><td>23.447</td><td>0.663</td><td>0.884</td><td>0.385</td><td>0.622</td><td>6.080</td><td>3.92e-04</td><td>16.21</td><td>2</td><td><a href='/show/index.html?id=14Bound_DasPostExp_9'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>8</td><td>15.564</td><td>20.486</td><td>0.760</td><td>0.968</td><td>0.500</td><td>0.728</td><td>2.530</td><td>4.04e-04</td><td>16.31</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_8'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>3</td><td>15.616</td><td>21.137</td><td>0.739</td><td>0.884</td><td>0.000</td><td>0.765</td><td>10.640</td><td>4.48e-04</td><td>18.66</td><td>2</td><td><a href='/show/index.html?id=14Bound_DingPostExp_3'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>4</td><td>15.816</td><td>25.489</td><td>0.621</td><td>0.968</td><td>0.000</td><td>0.580</td><td>17.730</td><td>6.64e-04</td><td>19.25</td><td>3</td><td><a href='/show/index.html?id=14Bound_DingPreExp_4'>-></a></td></tr>
+<tr><td>BujnickiPostExp</td><td>3</td><td>16.187</td><td>24.396</td><td>0.664</td><td>0.839</td><td>0.500</td><td>0.622</td><td>12.660</td><td>1.33e-03</td><td>22.10</td><td>1</td><td><a href='/show/index.html?id=14Bound_BujnickiPostExp_3'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>4</td><td>16.251</td><td>20.363</td><td>0.798</td><td>0.968</td><td>0.722</td><td>0.751</td><td>0.000</td><td>1.50e-03</td><td>17.16</td><td>1</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_4'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>7</td><td>16.410</td><td>24.836</td><td>0.661</td><td>0.968</td><td>0.000</td><td>0.637</td><td>20.770</td><td>1.99e-03</td><td>19.11</td><td>4</td><td><a href='/show/index.html?id=14Bound_DingPostExp_7'>-></a></td></tr>
+<tr><td>AdamiakPostExp</td><td>1</td><td>16.447</td><td>21.200</td><td>0.776</td><td>0.904</td><td>0.745</td><td>0.735</td><td>5.580</td><td>2.12e-03</td><td>12.31</td><td>3</td><td><a href='/show/index.html?id=14Bound_AdamiakPostExp_1'>-></a></td></tr>
+<tr><td>DasPreExp</td><td>4</td><td>16.609</td><td>20.456</td><td>0.812</td><td>0.894</td><td>0.745</td><td>0.796</td><td>13.680</td><td>2.81e-03</td><td>17.45</td><td>2</td><td><a href='/show/index.html?id=14Bound_DasPreExp_4'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>10</td><td>16.629</td><td>27.222</td><td>0.611</td><td>0.904</td><td>0.000</td><td>0.575</td><td>13.680</td><td>2.90e-03</td><td>19.52</td><td>4</td><td><a href='/show/index.html?id=14Bound_DingPostExp_10'>-></a></td></tr>
+<tr><td>AdamiakPreExp</td><td>1</td><td>16.649</td><td>21.461</td><td>0.776</td><td>0.904</td><td>0.745</td><td>0.735</td><td>5.070</td><td>3.01e-03</td><td>13.30</td><td>3</td><td><a href='/show/index.html?id=14Bound_AdamiakPreExp_1'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>6</td><td>16.669</td><td>27.310</td><td>0.610</td><td>0.938</td><td>0.000</td><td>0.575</td><td>8.610</td><td>3.10e-03</td><td>19.55</td><td>2</td><td><a href='/show/index.html?id=14Bound_DingPreExp_6'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>10</td><td>16.815</td><td>23.668</td><td>0.710</td><td>0.938</td><td>0.333</td><td>0.688</td><td>0.000</td><td>3.96e-03</td><td>15.36</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_10'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>4</td><td>16.842</td><td>25.735</td><td>0.654</td><td>0.933</td><td>0.000</td><td>0.635</td><td>15.700</td><td>4.15e-03</td><td>19.53</td><td>4</td><td><a href='/show/index.html?id=14Bound_DingPostExp_4'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>3</td><td>16.909</td><td>22.174</td><td>0.763</td><td>0.968</td><td>0.745</td><td>0.697</td><td>3.550</td><td>4.62e-03</td><td>15.93</td><td>2</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_3'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>8</td><td>16.927</td><td>25.523</td><td>0.663</td><td>0.933</td><td>0.000</td><td>0.647</td><td>13.680</td><td>4.76e-03</td><td>20.32</td><td>4</td><td><a href='/show/index.html?id=14Bound_DingPreExp_8'>-></a></td></tr>
+<tr><td>AdamiakPreExp</td><td>2</td><td>16.995</td><td>22.373</td><td>0.760</td><td>0.904</td><td>0.680</td><td>0.719</td><td>8.110</td><td>5.31e-03</td><td>14.36</td><td>3</td><td><a href='/show/index.html?id=14Bound_AdamiakPreExp_2'>-></a></td></tr>
+<tr><td>DingPreExp</td><td>5</td><td>17.866</td><td>29.340</td><td>0.609</td><td>0.938</td><td>0.000</td><td>0.565</td><td>12.660</td><td>1.92e-02</td><td>18.82</td><td>2</td><td><a href='/show/index.html?id=14Bound_DingPreExp_5'>-></a></td></tr>
+<tr><td>ChenPostExp</td><td>1</td><td>18.302</td><td>29.035</td><td>0.630</td><td>0.938</td><td>0.236</td><td>0.568</td><td>0.510</td><td>3.37e-02</td><td>16.68</td><td>3</td><td><a href='/show/index.html?id=14Bound_ChenPostExp_1'>-></a></td></tr>
+<tr><td>DingPostExp</td><td>6</td><td>18.311</td><td>26.006</td><td>0.704</td><td>0.910</td><td>-</td><td>0.694</td><td>17.220</td><td>3.41e-02</td><td>18.95</td><td>2</td><td><a href='/show/index.html?id=14Bound_DingPostExp_6'>-></a></td></tr>
+
+</table>
+-: No true positive interaction in the predicted structure.
+</div>
+
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Chichau Miau</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2000-01-01T00:00:01+00:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/table/'>table</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/" data-via="rnapuzzles" data-counturl="http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/" >Tweet</a>
+  
+  
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2000/01/01/puzzle-13-3d/" title="Previous Post: Puzzle 13 table">&laquo; Puzzle 13 table</a></li>
+            
+            
+            <li class="next"><a href="/blog/2000/01/01/puzzle-14Free-3d/" title="Next Post: Puzzle 14Free table">Puzzle 14Free table &raquo;</a></li>
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+      <section>
+        <h2>Comments</h2>
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
+    
+  </div>
+
+  
+  <aside class="sidebar col-md-3">
+    
+      <section>
+  <h1>RNA-Puzzles</h1>
+  <p>A CASP-like evaluation of RNA three-dimensional structure prediction</p>
+	<a href="https://github.com/RNA-Puzzles"><i class="fa fa-github-square fa-fw fa-2x"></i></a>
+	<a href="mailto:ibmc.cnrs@gmail.com"><i class="fa fa-envelope-square fa-fw fa-2x"></i></a>
+	<a href="https://twitter.com/RNAPuzzles"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>     
+	<a href="https://plus.google.com/u/0/108009192908181986924"><i class="fa fa-google-plus-square fa-fw fa-2x"></i></a>
+	<a href=""><i class="fa fa-coffee fa-fw fa-2x"></i></a>
+</section>
+<section class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2018/08/14/ur-1st-round-submission-table/">UR 1st Round Submission Table</a>
+    
+    <a class="list-group-item " href="/blog/2018/08/13/unknown-rfam-puzzles-first-round-closed/">Unknown Rfam Puzzles First Round Closed</a>
+    
+    <a class="list-group-item " href="/blog/2018/08/13/new-domain-name/">New Domain Name</a>
+    
+    <a class="list-group-item " href="/blog/2018/01/25/new-rna-puzzles-website-at-github/">New RNA-Puzzles Website at Github</a>
+    
+    <a class="list-group-item " href="/blog/2017/11/18/puzzle-21/">Puzzle 21</a>
+    
+  </div>
+</section>
+
+<section class="panel panel-info clearfix">
+  <div class="panel-heading">
+      <h3 class="panel-title">GitHub Repos</h3>
+  </div>
+  <div class="list-group" id="gh_repos">
+    <p class="loading">Status updating...</p>
+  </div>
+  
+    <div class="gh-profile-link pull-right text-muted">
+      <a href="https://github.com/RNA-Puzzles">@RNA-Puzzles</a> on GitHub
+    </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'RNA-Puzzles',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section class="panel panel-info clearfix">
+  <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+  </div>
+    <div class='list-group-item'><a href='/blog/categories/group/'>group (4)</a></div>
+<div class='list-group-item'><a href='/blog/categories/news/'>news (4)</a></div>
+<div class='list-group-item'><a href='/blog/categories/results/'>results (24)</a></div>
+<div class='list-group-item'><a href='/blog/categories/table/'>table (22)</a></div>
+
+
+</section>
+
+<section class="googleplus panel panel-default">
+  <div class="panel-body">
+    <h2>
+      <a href="https://plus.google.com/108009192908181986924?rel=author">
+        <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+        Google+
+      </a>
+    </h2>
+  </div>
+</section>
+
+
+
+
+
+    
+  </aside>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits" align="center">
+  Copyright &copy; 2018 - <a href="mailto:chichaumiau@gmail.com">Chichau Miau</a>
+  <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</p>
+
+</div>
+</footer>
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'rna-puzzles';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/';
+        var disqus_url = 'http://sccaf.ml/blog/2000/01/01/puzzle-14Bound-3d/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+	e.preventDefault();
+	$("#sidebar-wrapper").toggleClass("active");
+});
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+	e.preventDefault();
+	$("#sidebar-wrapper").toggleClass("active");
+});
+// Scrolls to the selected menu item on the page
+$(function() {
+	$('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+//#to-top button appears after scrolling
+var fixed = false;
+$(document).scroll(function() {
+	if ($(this).scrollTop() > 250) {
+		if (!fixed) {
+			fixed = true;
+			// $('#to-top').css({position:'fixed', display:'block'});
+			$('#to-top').show("slow", function() {
+				$('#to-top').css({
+					position: 'fixed',
+					display: 'block'
+				});
+			});
+		}
+	} else {
+		if (fixed) {
+			fixed = false;
+			$('#to-top').hide("slow", function() {
+				$('#to-top').css({
+					display: 'none'
+				});
+			});
+		}
+	}
+});
+</script>
+
+
+  </body>
+</html>
